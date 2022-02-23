@@ -9,9 +9,9 @@ loadBuddes();
 const displayBuddy = (data) => {
     const buddies = data.results;
     const buddiesContainer = document.getElementById('buddies');
-    // console.log(buddies);
+    console.log(buddies);
     for (const buddy of buddies) {
-        console.log(buddy.name.first, buddy.name.last);
+        // console.log(buddy.name.first, buddy.name.last);
         const p = document.createElement('p');
         p.innerText = `Name: ${buddy.name.title} ${buddy.name.first} ${buddy.name.last}
         email:${buddy.email}`;
